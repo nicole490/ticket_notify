@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1d2b3f3-2395-4370-b741-c194dffb00bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket_notify/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/ticket_notify/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket_notify/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ticket_notify/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket_notify/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/ticket_notify/wsgi.py" afterDir="false" />
-    </list>
+    <list default="true" id="c1d2b3f3-2395-4370-b741-c194dffb00bf" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state>
+              <caret column="13" selection-start-column="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -102,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="315">
               <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
@@ -130,7 +125,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ticket_notify_app/migrations/0003_auto_20190423_0919.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="39">
@@ -185,9 +180,9 @@
       <find>PROJECT_ROOT</find>
       <find>STATIC_ROOT</find>
       <find>STATICFILES_DIRS</find>
-      <find>SECURE_PROXY_SSL_HEADER</find>
       <find>dj_database_url</find>
       <find>db_from_env</find>
+      <find>SECURE_PROXY_SSL_HEADER</find>
     </findStrings>
     <replaceStrings>
       <replace>concert</replace>
@@ -249,12 +244,6 @@
               <item name="ticket_notify" type="b2602c69:ProjectViewProjectNode" />
               <item name="ticket_notify" type="462c0819:PsiDirectoryNode" />
               <item name="ticket_notify_app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ticket_notify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ticket_notify" type="462c0819:PsiDirectoryNode" />
-              <item name="ticket_notify_app" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -451,20 +440,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ticket_notify_app/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -511,6 +486,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
           <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

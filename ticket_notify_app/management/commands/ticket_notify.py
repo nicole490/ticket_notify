@@ -36,7 +36,7 @@ class Command(BaseCommand):
                 payload = {"message": driver.current_url}
 
                 try:
-                    response = requests.post(url, headers=headers, params=payload)
+                    requests.post(url, headers=headers, params=payload)
                 except Exception as e:
                     print(e)
 

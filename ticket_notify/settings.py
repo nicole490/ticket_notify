@@ -27,7 +27,7 @@ STATIC_URL = '/static/' # localでcssを読み込むためのパス(たぶん)
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, '/app/ticket_notify_app/static'), # サーバでcssを読み込むためのパス
+    os.path.join(BASE_DIR, 'static'), # サーバでcssを読み込むためのパス
 )
 
 

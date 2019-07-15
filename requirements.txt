@@ -20,3 +20,4 @@ selenium==3.141.0
 six==1.11.0
 tweepy==3.7.0
 urllib3==1.24.1
+whitenoise==3.3.1

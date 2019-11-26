@@ -12,11 +12,17 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 import logging
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC_ROOT = 'staticfiles'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+if os.environ['ENV'] == "LOCAL":
+    CHROME_DRIVER = "chromedriver_loacl"
+elif os.environ['ENV'] == "PRD":
+    CHROME_DRIVER = "chromedriver_prd"
 
 
 # Quick-start development settings - unsuitable for production
@@ -26,7 +32,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 SECRET_KEY = ')+b7-0wov9txrg^-1f#23c-(_%(odi=m*4c)mt61fwkpkf8z@#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -80,11 +86,13 @@ WSGI_APPLICATION = 'ticket_notify.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.config()
 }
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
 
 
 # Password validation

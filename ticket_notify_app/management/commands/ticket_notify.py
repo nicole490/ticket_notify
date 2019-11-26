@@ -15,7 +15,7 @@ from django.conf import settings
 class Command(BaseCommand):
     def handle(self, *args, **options):
         concerts = Concert.objects.all()
-        driver = webdriver.Chrome(executable_path=settings.BASE_DIR + "/chromedriver")
+        driver = webdriver.Chrome(executable_path=settings.BASE_DIR + "/" + settings.CHROME_DRIVER)
         for concert in concerts:
             tstr = concert.concert_date.strftime('%Y%m%d')
             target_url = "https://www.ticket.co.jp/sys/d/" + str(concert.artist_id) + ".htm?st=" + tstr + "&orderable=1&order=price"
